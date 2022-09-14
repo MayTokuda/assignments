@@ -54,14 +54,13 @@ ul{
 }
 .tabs .tabs_item .item_img{
     width: 100%;
-    height: 190px;
+    height: 50.7%;
     object-fit: cover;
     border-radius: 50%;
     margin: 50px auto 15px;
 }    
 .tabs .tabs_item .item_number{
-    /* color: #193abb; */
-    color: aquamarine;
+    color: #193abb;
     font-weight: bold;
     font-size: 0.8rem;
 }
