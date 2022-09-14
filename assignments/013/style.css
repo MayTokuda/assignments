@@ -1,0 +1,107 @@
+@charset "UTF-8";
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin: auto 0;
+}
+img{
+    max-width: 100%;
+}
+p{
+    margin: 0 auto;
+}
+ul{
+    padding:0 ;
+}
+.section{
+    max-width: 900px;
+    margin: 0 auto 100px auto;
+    padding: 0 2%;
+    text-align: left;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.title .title_pickup{
+    color: #193abb;
+    font-weight: bold;
+    width: 13%;
+    display:table-cell;
+    margin-top: 6px;
+}
+.title .title_text{
+    width: 87%;
+}
+.tabs .tabs_list{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+}
+.tabs .tabs_item{
+    width: 18%;
+    flex-basis: 100%;
+    padding-right: 5%;
+}
+.tabs_item:nth-child(4) {
+    padding-right: 0%;
+}
+.tabs .tabs_item .item_img{
+    width: 100%;
+    height: 50.8%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 50px auto 15px;
+}    
+.tabs .tabs_item .item_number{
+    color: #193abb;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.tabs .tabs_item .item_text{
+    font-weight: bold;
+    padding-right: 2%;
+    line-height: 2;
+}
+.tabs .tabs_item .item_text4{
+    letter-spacing: -0.38px;
+}
+@media screen and (max-width: 896px) {
+    .section,
+    .section .title{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }  
+    .tabs .tabs_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: auto auto 6%;
+    }
+    .tabs .tabs_item{
+        width: 60%;
+        padding: 0;
+    }
+    .tabs .tabs_item .item_img{
+        width: 770%;
+        margin : 50px auto 20px
+    }
+    .tabs .tabs_item .item_number,
+    .tabs .tabs_item .item_text{
+        width: 100%;
+        text-align: left;
+        margin:  auto  auto auto 5%;
+        padding: 0;
+    }
+}
