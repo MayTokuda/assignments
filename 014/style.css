@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/iit7reg.css");
+
+:root{
+    --basecolor: #009655; /* 基本色 */
+}
+html, body {
+    font-size: 14px;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: teko, sans-serif;
+    font-weight:600;
+    font-style: normal;
+    flood-color: #333836;
+    letter-spacing: 0.1px;
+}
+h2{
+    font-weight: 400;
+    font-size: 64px;
+}
+span{
+    color: var(--basecolor);
+}
+
+.faq{
+    max-width: 900px;
+    display: block;
+    justify-content: center;
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.list_item{
+    padding: 15px auto;
+}
+.list_item_text{
+    position: relative;
+    padding-top: 5px;
+    padding-left: 30px;
+    margin: 25px auto;
+}
+.list_item_text::before{
+    content: 'Q';
+    position: absolute;
+    color: var(--basecolor);
+    font-size: 28px;
+    border-bottom:none;
+    padding-right: 10px;
+    top: calc(50% - 20px);
+    left: 0;
+    margin: auto 0
+}
+.list_item_text::after {
+    content: '';
+    width: 95%;
+    height: 1px;
+    display: inline-block;
+    background-color: lightgray;
+    position: absolute;
+    bottom: -12px;
+    left: 30px;
+}
+.title_link{
+    border: solid 2px;
+    border-radius: 3px;
+    text-align: center;
+    width: 200px;
+    padding: 12px 15px 7px 15px ;
+    margin: 50px auto;
+}
+.fa-sharp{
+padding-left: 5px;
+}
