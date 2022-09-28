@@ -66,4 +66,19 @@ dd{
     width: 80%;
 }
 
+@media screen and (max-width: 834px) {
+    dl{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    dt{
+        align-items: center;  
+        width: 100%;
+        padding: 15px ;
+    }
+    dd{
+        width: 100%;
+    }
+}
+
 
