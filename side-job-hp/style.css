@@ -366,7 +366,6 @@ padding-top: 324px;
     content: attr(title);
     display: block;
     font-size: var(--f24);
-
 }
 .page__img{
     display: block;
@@ -376,4 +375,31 @@ padding-top: 324px;
 }
 .page__news__list{
     margin: 95px 0;
+}
+/*================================================
+    page：News
+================================================*/
+.news-detail__header{
+    text-align-last: left;
+}
+.news-detail__time{
+    color: var(--gray);
+}
+.news-detail__title{
+    font-size: var(--f30);
+    margin-bottom: 135px;
+}
+.news-detail__title:after{
+    content: "カテゴリ";
+    display: flex;
+    justify-content: center;
+    width: 96px;
+    font-size: var(--f16);
+    color: var(--white);
+    background-color: var(--blue);
+    margin-top: 20px;
+}
+.news-detail__body{
+    text-align: left;
+    padding: 86px 60px 91px;
 }

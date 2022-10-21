@@ -11,7 +11,7 @@
                             <li class="news__item">
                                 <time class="news__time">2021.03.31</time>
                                 <p class="news__title">タイトルタイトルタイトルタイトルタイトル</P>
-                                <a class="news__link" href="#">→</a>
+                                <a class="news__link" href="news-1.php">→</a>
                             </li>
                             <li class="news__item">
                                 <time class="news__time">2021.03.31</time>
