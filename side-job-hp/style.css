@@ -1,0 +1,379 @@
+@charset "UTF-8";
+:root {
+    --f140:7.29rem;    /* 140px */
+    --f100:6.25rem;    /* 100px */
+    --f80: 5.0rem;     /* 80px */
+    --f56: 3.5rem;     /* 56px */
+    --f40: 2.5rem;     /* 40px */
+    --f36: 2.3rem;     /* 36px */
+    --f30: 1.9rem;     /* 30px */
+    --f24: 1.5rem;     /* 24px */
+    --f20: 1.25rem;    /* 20px */
+    --f18: 1.125rem;   /* 18px */
+    --f16: 1rem;       /* 16px */
+    --f14: .875rem;    /* 14px */
+    --f13: .8125rem;   /* 13px */
+    --f12: .75rem;     /* 12px */
+    --f10: .6rem;      /* 10px */
+    --white: #F8F8FA;
+    --blue: #003C8A;
+    --red: #FF0000;
+    --gray: #888888;
+    --gray2: #707070;
+    --beige: #DFE3E6;
+    --myfont: 'Josefin Sans', sans-serif;
+    --myw: 1080px; /* 標準幅 */
+}
+
+html {
+    font-size: 100%;
+}
+body {
+    color: #050507;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+li {
+    list-style: none;
+}
+/*================================================
+    共通
+================================================*/
+.div__inner{
+    max-width: var(--myw);
+    text-align: center;
+    margin: 0 auto;
+}
+/*================================================
+    共通（header）
+================================================*/
+header{
+    position: relative;
+}
+nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.header-nav__title{
+    display: flex;
+    justify-content: start;
+    padding-left: 5px;
+    font-size: var(--f24);
+}
+.header-nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 30px;
+}
+.header-nav__item{
+    padding-right: 28px;
+}
+.header-nav__item:last-child {
+    background-color: var(--blue);
+    padding: 15px;
+}
+.header-nav__btn .header-nav__link{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+.header-nav__icon{
+    display: block;
+    width: 24px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*================================================
+    HOME画面のみ（header）
+================================================*/
+.home .header-nav__title,
+.home .header-nav__link{
+    color: var(--white);
+}
+.home .header-nav__item:last-child {
+    background-color: var(--white);
+}
+.home .header-nav__btn .header-nav__link{
+    color: var(--blue);
+}
+/*================================================
+    TOP
+================================================*/
+.mv__bg{
+    object-fit: cover;
+    filter: opacity(71%) ;
+    width: 100%;
+    height: 100vh;
+}
+.mv__catchcopy{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: var(--white);
+}
+.catchcopy__main-text{
+    font-size: 7.3vw;
+    line-height: 1.2;
+}
+.catchcopy__sub-text{
+    font-size: 2.5vw;
+    padding-top: 15px;
+}
+/*================================================
+    各section共通
+================================================*/
+.section__container{
+    padding: 100px 0 0;
+}
+.section__title{
+    text-align: left;
+    font-size: var(--f80);
+}
+.section__title::after{
+    content: attr(title);
+    display: block;
+    font-size: var(--f16);
+    margin-bottom: 64px;
+}
+.section__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    column-gap: 96px;
+}
+.section__item .item__img{
+    width: calc(50% - 96px);
+}
+.section__item .item__text{
+    width: 50%;
+}
+.item__text .text__title{
+    font-size: var(--f40);
+}
+.item__text .text__detail{
+    padding: 32px 0 46px;
+}
+/*== 「詳しく見る」ボタン ===============================*/
+.text__more-btn{
+    color: var(--white);
+    border-radius: 10px;
+    background-color: var(--blue);
+    padding: 21px 24px;
+}
+.text__more-btn::after{
+    content: url(img/Icon\ ionic-ios-arrow-dropright-circle.png);
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    padding-left: 80px;
+}
+.text__more-btn:hover{
+    color: var(--blue);
+    border: solid 1px var(--blue);
+    background-color: var(--white);
+}
+.text__more-btn:hover:after{
+    content: url(img/Icon\ ionic-ios-arrow-dropright.png);
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    padding-left: 80px;
+}
+/*================================================
+    Service
+================================================*/
+#service .item__1{
+    flex-flow: row-reverse;
+    margin-bottom: 100px;
+}
+/*================================================
+    Company
+================================================*/
+#company .section__item{
+    flex-flow: row-reverse;
+}
+/*================================================
+    News
+================================================*/
+.news__section{
+    margin-bottom: 180px;
+}
+.news__list{
+    display: flex;
+    flex-direction: column;
+}
+.news__item{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    border-bottom: 1px solid var(--beige);
+    height: 60px;
+    padding: 0px 40px;
+}
+
+.news__time{
+    display: block;
+    width: 15%;
+    color: var(--blue);
+    font-size: var(--f14);
+}
+.news__title{
+    width: 75%;
+}
+.news__link{
+    text-align: right;
+    width: 10%;
+    font-size: var(--f24);
+    color: var(--blue);
+}
+.news__more-link{
+    text-align: right;
+    font-size: var(--f18);
+    margin-top: 65px;
+}
+.news__more-link:hover{
+    font-weight: bold;
+}
+.news__more-btn{
+    border-bottom: solid 1px var(--beige);
+    padding-bottom: 10px;
+}
+.news__more-btn::after{
+    content: '＞';
+    display: inline-block;
+    padding-left: 40px;
+    }
+/*================================================
+    Contact
+================================================*/
+.contact__bg{
+    background-image: url(img/contact-bg.png);
+}
+.contact__item{
+    max-width: 1080px;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+.contact__item .item__title{
+    font-size: var(--f80);
+}
+.contact__item .item__title::after{
+    content: attr(title);
+    display: block;
+    text-align: left;
+    font-size: var(--f16);
+}
+.contact__item .item__btn{
+    color: var(--blue);
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 21px 24px;
+}
+.contact__item .item__btn::after{
+    content: url(img/Icon\ ionic-ios-arrow-dropright.png);
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    padding-left: 80px;
+}
+.contact__item .item__btn:hover{
+    color: var(--white);
+    border: solid 1px var(--white);
+    background-color: var(--blue);
+}
+.contact__item .item__btn:hover:after{
+    content: url(img/Icon\ ionic-ios-arrow-dropright-circle.png);
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    padding-left: 80px;
+}
+/*================================================
+    footer
+================================================*/
+.footer{
+    background-color: #000;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 70px 0;
+}
+.footer-nav__title{
+    display: flex;
+    justify-content: start;
+    padding-left: 5px; 
+    font-size: var(--f24);
+    font-weight: normal;
+}
+.footer-nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.footer-nav__item{
+    padding-right: 30px;
+}
+.footer-nav__link{
+    color: var(--white);
+    font-size: var(--f18);
+}
+.copyright{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: var(--f12);
+    padding-bottom: 10px;
+}
+/*================================================
+    page：News
+================================================*/
+.page__wrapper{
+padding-top: 324px;
+
+}
+.page__title{
+    font-size: var(--f100);
+    color: var(--blue);
+    padding-left: 200px;
+    padding-bottom: 136px;
+}
+.page__title::after{
+    content: attr(title);
+    display: block;
+    font-size: var(--f24);
+
+}
+.page__img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 640px;
+}
+.page__news__list{
+    margin: 95px 0;
+}
