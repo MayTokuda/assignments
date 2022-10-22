@@ -428,3 +428,17 @@ padding-top: 324px;
 .story__title{
     width: 70%;
 }
+/*================================================
+    page:company
+================================================*/
+.service__img{
+    width: 444px;
+    height: 444px;
+}
+.service__item__reverse{
+    flex-flow: row-reverse;
+    margin-top: 80px;
+}
+.service__list:last-of-type{
+    margin-bottom: 100px;
+}
