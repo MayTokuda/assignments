@@ -4,7 +4,7 @@
         <main>
             <div class="page__wrapper">          
                 <h2 class="page__title" title="お知らせ">News</h2>
-                <img class="page__img"src="img/news-visual.png" alt=""></p>
+                <img class="page__img"src="img/news-visual.png" alt="">
 
                 <div class="div__inner">
                         <ul class="news__list page__news__list">

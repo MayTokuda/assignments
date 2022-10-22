@@ -403,3 +403,28 @@ padding-top: 324px;
     text-align: left;
     padding: 86px 60px 91px;
 }
+/*================================================
+    page:About us
+================================================*/
+.about-us__item__reverse{
+    flex-flow: row-reverse;
+    margin-top: 95px ;
+}
+.story__list {
+    padding-left: 175px;
+    padding-right: 105px;
+}
+.story__item{
+    display: flex;
+    text-align: left;
+    border-bottom: solid 1px var(--beige);
+    padding: 20px 0;
+}
+.story__time{
+    width: 30%;
+    color: var(--blue);
+    padding-left: 45px;
+}
+.story__title{
+    width: 70%;
+}

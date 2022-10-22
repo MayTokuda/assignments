@@ -1,4 +1,4 @@
-<!-- footer読み込み -->
+<!-- header読み込み -->
 <?php include "include/header.php" ?>
 
         <main>
