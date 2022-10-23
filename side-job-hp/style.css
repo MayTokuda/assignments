@@ -442,3 +442,43 @@ padding-top: 324px;
 .service__list:last-of-type{
     margin-bottom: 100px;
 }
+/*================================================
+    page:cpmpany
+================================================*/
+dl,dd,dt{
+box-sizing: border-box;
+}
+.company__info{
+display: flex;
+flex-wrap: wrap;
+    text-align: left;
+    line-height: 2;
+    padding: 65px 140px ;
+    box-sizing: border-box;
+}
+.company__info dt,
+    .company__info dd{
+    /* padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    box-sizing: content-box;
+   
+    border-bottom: solid 1px var(--beige);
+}
+.company__info dt{
+    width: 25%;
+    float: left;
+    display: flex;
+    align-items: center;
+padding-left: 40px;
+
+}
+.company__info dd{
+width: calc( 75% - 80px);
+padding: 20px 0;
+padding-left: 40px;
+}
+
+.company__item{
+    margin-bottom: 100px;
+}
