@@ -429,7 +429,7 @@ padding-top: 324px;
     width: 70%;
 }
 /*================================================
-    page:company
+    page:service
 ================================================*/
 .service__img{
     width: 444px;
@@ -443,42 +443,104 @@ padding-top: 324px;
     margin-bottom: 100px;
 }
 /*================================================
-    page:cpmpany
+    page:company
 ================================================*/
-dl,dd,dt{
-box-sizing: border-box;
+.company__info dl,dd,dt{
+    box-sizing: border-box;
 }
 .company__info{
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     text-align: left;
     line-height: 2;
     padding: 65px 140px ;
     box-sizing: border-box;
 }
 .company__info dt,
-    .company__info dd{
-    /* padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px; */
+.company__info dd{
     box-sizing: content-box;
-   
     border-bottom: solid 1px var(--beige);
+    padding-left: 40px;
 }
 .company__info dt{
     width: 25%;
     float: left;
     display: flex;
     align-items: center;
-padding-left: 40px;
-
+    
 }
 .company__info dd{
-width: calc( 75% - 80px);
-padding: 20px 0;
-padding-left: 40px;
+    width: calc( 75% - 80px);
+    padding: 20px 0;
 }
-
 .company__item{
     margin-bottom: 100px;
+}
+/*================================================
+    page:contact
+================================================*/
+.contact__inner{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact__info{
+    margin-top: 90px;
+    text-align: center;
+    font-weight: bold;
+}
+.form{
+    margin: 64px auto;
+}
+.form__item{
+    padding-bottom: 24px;
+    width: 100%;
+}
+.form__lavel{
+    width: 100%;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.form__label .isMsg{
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+.form__required{
+    align-items: flex-start;
+    width: 12px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    color: var(--red);
+}
+.form__input{
+    border: 1px solid var(--gray2);
+    padding: 0.5em 1em; 
+    height: 36px;
+    flex: 1;
+    width: 100%;
+}
+.form__input::placeholder{
+    color: #E0E0E0;
+}
+.form__textarea{
+    border: 1px solid var(--gray2);
+    padding: 0.5em 1em; 
+    height: 220px;
+    flex: 1;
+    width: 100%;
+}
+.form__textarea::placeholder{
+    color: #E0E0E0;
+}
+.form__btn{
+    border-radius: 10px;
+    margin: 32px auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 250px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: var(--blue);
+    color: var(--white);
 }

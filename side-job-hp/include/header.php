@@ -22,7 +22,7 @@
                 <li class="header-nav__item"><a class="header-nav__link" href="company.php">Company</a></li>
                 <li class="header-nav__item"><a class="header-nav__link" href="news.php">News</a></li>
                 <li class="header-nav__item header-nav__btn">
-                    <a class="header-nav__link" href="#"><img class="header-nav__icon" src="img/Icon material-email.png" alt="">Contact</a>
+                    <a class="header-nav__link" href="contact.php"><img class="header-nav__icon" src="img/Icon material-email.png" alt="">Contact</a>
                 </li>
             </ul>
         </nav>
